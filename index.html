@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>absolutely not</title>
+    <title>no</title>
     <script>
-        window.open()
-        location.reload
+        function openAndReload() {
+            const newWindow = window.open('', '_blank');
+            if (newWindow) {
+                newWindow.location.reload();
+            } else {
+                alert("allow popups u bum");
+            }
+        }
     </script>
     <style>
         body {
